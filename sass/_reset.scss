@@ -14,9 +14,12 @@ a{
 }
 a,
 .btn,
+.btn:before,
+.btn:after,
 button,
 button:before,
-button:after{
+button:after,
+nav li{
 	text-decoration: none;
 	-webkit-transition: all 0.15s ease-in-out;
    -moz-transition: all 0.15s ease-in-out;

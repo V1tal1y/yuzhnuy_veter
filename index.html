@@ -2,95 +2,111 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Test</title>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Южный ветер</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
 	<link rel="stylesheet" href="css/main.css">
-	
+
 	<script  src="js/libs.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>
 	
 </head>
 <body>
 	<nav>
-		<div class="logo"><img src="img/logo.png" alt=""> южный ветер</div>
-		<ul>
-			<li>преимущества</li>                                           
-			<li>услуги</li>
-			<li>схема работы</li>
-			<li>сертификаты</li>
-			<li>наши заказчики</li>
-			<li>география наших объектов</li>
-			<li>FAQ</li>
-		</ul>
-		<div class="right">
-			<tel>+7 812 98 999 58</tel>
-			<div class="btn">перезвоните мне</div>
-			<span>СПб, ул. Рижская, д.3, оф. 306 БЦ “Наутилус”</span>
+		<div class="row row_nav">
+			<img src="img/logo_m.png" alt="" data-href="body" class="logo">
+			<div class="right">
+				<tel>+7 812 98 999 58</tel>
+				<a class="btn" href="#sf" data-form="Заказать звонок(шапка)">перезвоните мне</a>
+				<span>СПб, ул. Рижская, д.3, оф. 306 БЦ “Наутилус”</span>
+			</div>
+			<ul>
+				<li data-href=".advantages">преимущества</li>                                           
+				<li data-href=".services">услуги</li>
+				<li data-href=".scheme">схема работы</li>
+				<li data-href=".certificates">сертификаты</li>
+				<li data-href=".customers">наши заказчики</li>
+				<li data-href=".geo">география наших объектов</li>
+				<li data-href=".faq">FAQ</li>
+			</ul>
 		</div>
 	</nav>
 	<header>
 		<div class="row">
-			<h1>
+			<h1 class="wow bounceInLeft">
 				кадастровые работы
 				<span>и межевание по лучшей цене в спб и ло</span> 
 			</h1>
-			<form>
-				<h3>оставьте заявку и получите 30% скидку на услуги</h3>
-				<input type="text" placeholder="Ваше имя">
-				<input type="text" placeholder="Ваш телефон">
-				<input type="submit" value="отправить" class="btn">
+			<h3 class="wow bounceInRight">оставьте заявку и получите 30% скидку на услуги</h3>
+			<form class="wow bounceInUp">
+				<div class="input">
+					<input type="text" placeholder="Ваше имя" required="required">
+				</div>
+				<div class="input">
+					<input type="text" placeholder="Ваш телефон" required="required">
+				</div>
+				<button class="btn" data-form="Первый экран">отправить</button>
 			</form>
 		</div>
 	</header>
 	<main role="main">
 		<section class="advantages">
 			<div class="row">
-				<h2>преимущества</h2>
+				<h2 class="wow bounceInDown">преимущества</h2>
 				<ul>
-					<li>
+					<li class="wow bounceInLeft">
 						<div class="img">
 							<img src="img/pr1.webp" alt="">
 						</div>
 						Информационное сопровождение 24 часа 7 дней в неделю
 					</li>
-					<li>
+					<li class="wow bounceInLeft">
 						<div class="img">
 							<img src="img/pr2.webp" alt="">
 						</div>
 						Аттестованные Росреестром кадастровые инженеры
 					</li>
-					<li>
+					<li class="wow bounceInRight">
 						<div class="img">
 							<img src="img/pr3.webp" alt="">
 						</div>
 						Работа по договору с предоплатой 50 %
 					</li>
-					<li>
+					<li class="wow bounceInRight">
 						<div class="img">
 							<img src="img/pr4.webp" alt="">
 						</div>
 						Бесплатное увеличение земельного участка на 10% и более
 					</li>
-					<li>
+					<li class="wow bounceInLeft">
 						<div class="img">
 							<img src="img/pr5.webp" alt="">
 						</div>
 						Точный расчет <br> стоимости
 					</li>
-					<li>
+					<li class="wow bounceInLeft">
 						<div class="img">
 							<img src="img/pr6.webp" alt="">
 						</div>
 						Многолетний опыт <br> работы
 					</li>
-					<li>
+					<li class="wow bounceInRight">
 						<div class="img">
 							<img src="img/pr7.webp" alt="">
 						</div>
 						Бесплатная консультация по земельным вопросам
 					</li>
-					<li>
+					<li class="wow bounceInRight">
 						<div class="img">
 							<img src="img/pr8.webp" alt="">
 						</div>
@@ -101,96 +117,96 @@
 		</section>
 		<section class="services">
 			<div class="row">
-				<h2>виды услуг</h2>
+				<h2 class="wow bounceInDown">виды услуг</h2>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInLeft">
 						<h3>Уточнение границ земельного <br> участка (межевание)</h3>
-						процедура, по результатам которой происходит юридическое и физическое определение границ Вашего земельного участка с уточнением используемой Вами площади и внесением полученных сведений в Федеральную кадастровую палату и на публичную кадастровую карту. По результатам работ выдается выписка из ЕГРН.
+						<p>процедура, по результатам которой происходит юридическое и физическое определение границ Вашего земельного участка с уточнением используемой Вами площади и внесением полученных сведений в Федеральную кадастровую палату и на публичную кадастровую карту. По результатам работ выдается выписка из ЕГРН.</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Уточнение границ земельного участка (межевание)">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys1.jpg" alt="">
+					<img src="img/ys1.jpg" alt="" class="wow bounceInRight">
 				</div>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInRight">
 						<h3>Технический паспорт <br>и АКТ обследования </h3>
-						Технический паспорт и АКТ обследования–разработкатехнического плана для внесения изменений или постановкина государственный кадастровый учет объектов капитального строительства: домов, бань, гаражей, квартир. Подготовка акта о снятии сгосударственного кадастрового учета..
+						<p>Технический паспорт и АКТ обследования–разработкатехнического плана для внесения изменений или постановкина государственный кадастровый учет объектов капитального строительства: домов, бань, гаражей, квартир. Подготовка акта о снятии сгосударственного кадастрового учета..</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Технический паспорт и АКТ обследования">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys2.jpg" alt="">
+					<img src="img/ys2.jpg" alt="" class="wow bounceInLeft">
 				</div>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInLeft">
 						<h3>Раздел или объединение земельного <br> участка (межевание) </h3>
-						Раздел или объединение земельного участка (межевание) – подготовка межевого плана (документов) на образование двух и более земельных участков путем раздела исходного земельного участка или на образование единого земельного участка путем объединения нескольких исходных земельных участков с одновременной регистрацией права собственности на основании решения собственников о разделе (об объединении)
+						<p>Раздел или объединение земельного участка (межевание) – подготовка межевого плана (документов) на образование двух и более земельных участков путем раздела исходного земельного участка или на образование единого земельного участка путем объединения нескольких исходных земельных участков с одновременной регистрацией права собственности на основании решения собственников о разделе (об объединении)</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Раздел или объединение земельного участка (межевание)">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys3.jpg" alt="">
+					<img src="img/ys3.jpg" alt="" class="wow bounceInRight">
 				</div>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInRight">
 						<h3>Образование или перераспределение <br> границ земельного участка (межевание) </h3>
-						Образование или перераспределение границ земельного участка (межевание) –разработка схемы расположения земельного участка на кадастровом плане территории (КПТ) и последующего межевого плана для дальнейшей подачи заявления в администрацию на приобретение нового земельного участка или увеличения своего земельного участка путем перераспределения (прирезки) невостребованной земли администрации.
+						<p>Образование или перераспределение границ земельного участка (межевание) –разработка схемы расположения земельного участка на кадастровом плане территории (КПТ) и последующего межевого плана для дальнейшей подачи заявления в администрацию на приобретение нового земельного участка или увеличения своего земельного участка путем перераспределения (прирезки) невостребованной земли администрации.</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Образование или перераспределение границ земельного участка (межевание)">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys4.jpg" alt="">
+					<img src="img/ys4.jpg" alt="" class="wow bounceInLeft">
 				</div>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInLeft">
 						<h3>Проект межевания территории</h3>
-						Проект межевания территории –разработка и утверждение градостроительной документации - проектов планировки, проектов межевания площадных и линейных объектов, градостроительных планов. Разработка проекта организации застройки для дачных и садовых товариществ.
+						<p>Проект межевания территории –разработка и утверждение градостроительной документации - проектов планировки, проектов межевания площадных и линейных объектов, градостроительных планов. Разработка проекта организации застройки для дачных и садовых товариществ.</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Проект межевания территории">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys5.jpg" alt="">
+					<img src="img/ys5.jpg" alt="" class="wow bounceInRight">
 				</div>
 				<div class="services_bl">
-					<div class="text">
+					<div class="text wow bounceInRight">
 						<h3>Вынос межевых знаков в натуру </h3>
-						Вынос межевых знаков в натуру - указание на местности границ земельного участка путем выноса в натуру межевых знаков в форме арматурных штырей длинной около 1 метра (либо по индивидуальному заказу) с применением высокоточного спутникового оборудования с составлением акта о выносе точек.
+						<p>Вынос межевых знаков в натуру - указание на местности границ земельного участка путем выноса в натуру межевых знаков в форме арматурных штырей длинной около 1 метра (либо по индивидуальному заказу) с применением высокоточного спутникового оборудования с составлением акта о выносе точек.</p>
 						<div class="prise">
 							от 15 000 руб.
-							<div class="btn">заказать</div>
+							<a class="btn" href="#sf" data-form="Вынос межевых знаков в натуру">заказать</a>
 						</div>
 					</div>
-					<img src="img/ys6.jpg" alt="">
+					<img src="img/ys6.jpg" alt="" class="wow bounceInLeft">
 				</div>
 			</div>
 		</section>
 		<section class="scheme">
 			<div class="row">
-				<h2>Схема работы</h2>
+				<h2 class="wow bounceInDown">Схема работы</h2>
 				<ul>
-					<li>
+					<li class="wow bounceInLeft">
 						<div class="img"><img src="img/shem1.jpg" alt=""></div>
 						Заключаем договор
 					</li>
-					<li>
+					<li class="wow bounceInDown">
 						<div class="img"><img src="img/shem2.jpg" alt=""></div>
 						Выезд геодезистов на участок 
 					</li>
-					<li>
+					<li class="wow bounceInUp">
 						<div class="img"><img src="img/shem3.jpg" alt=""></div>
 						Согласование границ (подготовка акта согласования границ)
 					</li>
-					<li>
+					<li class="wow bounceInDown">
 						<div class="img"><img src="img/shem4.jpg" alt=""></div>
 						Подготовка межевого  (технического) плана и подача в МФЦ
 					</li>
-					<li>
+					<li class="wow bounceInRight">
 						<div class="img"><img src="img/shem5.jpg" alt=""></div>
 						Получение выписки из ЕГРН  (готовых документов) 
 					</li>
@@ -199,124 +215,199 @@
 		</section>
 		<section class="paralax">
 			<div class="row">
-				<h2>Есть вопросы? Закажите консультацию бесплатно</h2>
-				<form>
-					<input type="text" placeholder="Ваше имя">
-					<input type="text" placeholder="Ваш телефон">
-					<input type="submit" value="отправить" class="btn">
+				<h2 class="wow bounceIn">Есть вопросы? Закажите консультацию бесплатно</h2>
+				<form class="wow bounceIn">
+					<div class="input">
+						<input type="text" placeholder="Ваше имя" required="required">
+					</div>
+					<div class="input">
+						<input type="text" placeholder="Ваш телефон" required="required">
+					</div>
+					<button class="btn"  data-form="Консультация(первый блок с паралаксом)">отправить</button>
 				</form>
 			</div>
 		</section>
 		<section class="certificates">
 			<div class="row">
-				<h2>сертификаты</h2>
-				<div class="slider">
-					<div><img src="img/cert/1.jpg" alt=""></div>
-					<div><img src="img/cert/2.jpg" alt=""></div>
-					<div><img src="img/cert/3.jpg" alt=""></div>
-					<div><img src="img/cert/4.gif" alt=""></div>
-					<div><img src="img/cert/5.jpg" alt=""></div>
+				<h2 class="wow bounceInDown">сертификаты</h2>
+				<div class="certificates_bl">
+					<a href="img/cert/1.jpg"  class="fancybox-thumb wow bounceInLeft" rel="fancybox-thumb" ><img src="img/cert/1.jpg" alt=""></a>
+					<a href="img/cert/2.jpg" class="fancybox-thumb wow bounceInDown" rel="fancybox-thumb" ><img src="img/cert/2.jpg" alt=""></a>
+					<a href="img/cert/3.jpg" class="fancybox-thumb wow bounceIn" rel="fancybox-thumb" ><img src="img/cert/3.jpg" alt=""></a>
+					<a href="img/cert/4.gif" class="fancybox-thumb wow bounceInUp" rel="fancybox-thumb" ><img src="img/cert/4.gif" alt=""></a>
+					<a href="img/cert/5.jpg" class="fancybox-thumb wow bounceInRight" rel="fancybox-thumb" ><img src="img/cert/5.jpg" alt=""></a>
 				</div>
 			</div>
 		</section>
 		<section class="customers">
 			<div class="row">
-				<h2>наши заказчики</h2>
-				<div class="slider">
-					<div><img src="img/partners/1.jpg" alt=""></div>
-					<div><img src="img/partners/2.jpg" alt=""></div>
-					<div><img src="img/partners/3.jpg" alt=""></div>
-					<div><img src="img/partners/4.jpg" alt=""></div>
-					<div><img src="img/partners/5.jpg" alt=""></div>
-					<div><img src="img/partners/6.jpg" alt=""></div>
-					<div><img src="img/partners/7.jpg" alt=""></div>
-					<div><img src="img/partners/8.png" alt=""></div>
-					<div><img src="img/partners/9.png" alt=""></div>
-					<div><img src="img/partners/10.png" alt=""></div>
-					<div><img src="img/partners/11.png" alt=""></div>
-					<div><img src="img/partners/12.png" alt=""></div>
-					<div><img src="img/partners/13.png" alt=""></div>
-					<div><img src="img/partners/14.jpg" alt=""></div>
+				<h2 class="wow bounceInDown">наши заказчики</h2>
+				<div class="slider wow bounceIn">
+					<div>
+						<img src="img/partners/1.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/2.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/3.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/4.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/5.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/6.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/7.jpg" alt="">
+					</div>
+					<div>
+						<img src="img/partners/8.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/9.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/10.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/11.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/12.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/13.png" alt="">
+					</div>
+					<div>
+						<img src="img/partners/14.jpg" alt="">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="geo">
 			<div class="row">
-				<h2>география наших объектов</h2>
-				<img src="img/map.jpg" alt="">
+				<h2 class="wow bounceInDown">география наших объектов</h2>
+				<img src="img/map.jpg" alt="" class="wow bounceIn">
 			</div>
 		</section>
 		<section class="paralax2">
 			<div class="row">
-				<h2>Оставьте заявку на расчет <br> стоимости работ</h2>
-				<div class="btn">заказать</div>
-				<p>или звоните самостоятельно</p>
-				<tel>+7-812- 98-999-58</tel>
+				<div class="left wow bounceInLeft">
+					<h2>Оставьте заявку на расчет <br> стоимости работ</h2>
+					<p>или звоните самостоятельно</p>
+				</div>
+				<div class="right wow bounceInRight">
+					<div class="btn" href="#sf" data-form="Заказать звонок(паралакс)">заказать</div>
+					<br>
+					<tel>+7-812- 98-999-58</tel>
+				</div>
 			</div>
 		</section>
 		<section class="faq">
 			<div class="row">
-				<h2>часто задаваемые вопросы</h2>
-				<ul>
+				<h2 class="wow bounceInDown">часто задаваемые вопросы</h2>
+				<ul class="wow bounceIn">
 					<li>
 						<div class="visible">
-							Как записаться на курсы?
-							<div class="view">смотреть ответ</div>
+							Что такое межевание?
+							<a class="view" href="#faq1">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq1" class="faq_as">
+								<p>Межевание это комплекс геодезических и кадастровых работ направленный на установление, востановление, определение и закрепление границ земельного участка на местности, а также на уточнение конфигурации, координат и площади земельного участка. Под межеванием, чаще всего, люди подразумераю необходимость юридически зафиксировать границы своего землепользования.</p>
+								<p>Чаще всего вводя запрос на межевание, для людей необходимо выполнит кадастровые работы по уточнению границ земельного участка, в результате которых земельный участок отображается на публичной кадастровой карте, а также может изменится площадь.</p>
+								<p>Основные виды работ связанные с запросом межевание являются:</p>
+								<p>Уточнение границ земельного участка – государственный кадастровый учет в отношении объекта недвижимости, учет изменений в связи с изменением площади земельного участка и (или) изменением описания местоположения его границ;</p>
+								<p>Раздел земельного участка - государственный кадастровый учет в отношении объекта недвижимости, образование новых земельных участков путем раздела исходного;</p>
+								<p>Объединение земельных участков - государственный кадастровый учет в отношении объекта </p>недвижимости, образование нового земельного участка путем объединения исходных земельных участков.
+								<p>Перераспределение - государственный кадастровый учет в отношении объекта недвижимости, </p>образование нового земельного участка путем перераспределения (изменения) (с землями муниципальной собственности)  границ и площади исходного земельного участка;</p>
+								<p>Вынос межевых знаков – указание на местности точного местоположения границ земельного участка путем заколачивания колышков (межевых знаков) на территории участка.</p>
+							</div>
 						</div>
 					</li>
 					<li>
 						<div class="visible">
-							Сколько человек занимается в группе?
-							<div class="view">смотреть ответ</div>
+							Как проводится (выполняется) межевание?
+							<a class="view" href="#faq2">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq2" class="faq_as">
+								<p>В зависимости от вида кадастровых работ, порядок и виды необходимых документов могут меняться. Рассмотрим наиболее часто встречающийся вариант межевания – уточнение границ земельного участка.</p>
+								<p>В первую очередь кадастровым инженером или геодезистом осуществляется выезд для выполняется плановой топографической съемки земельного участка на который будет проводиться данная процедура. Параллельно с этим осуществляется запрос дополнительных сведений из государственной кадастровой палаты. Далее формируются границы земельного участка на основании полученных сведений, геодезической съемки, правоустанавливающих документов  и готовится акт согласования границ земельного участка. Данный акт должен быть подписан всеми заинтересованными лицами (соседи, председатель, собственник),  хотя в некоторых случаях возможно частичное согласование. После подписания акта, кадастровый инженер готовит межевой план для подачи в органы государственного кадастрового учета. После подачи межевого плана в органы государственного кадастрового учета, правообладатель получает выписку из ЕГРН со всеми внесенными изменениями, а также его участок отображается на публичной кадастровой карте.</p>
+							</div>
 						</div>
 					</li>
 					<li>
 						<div class="visible">
-							У вас есть перемены или перерывы?
-							<div class="view">смотреть ответ</div>
+							Какие документы необходимы для межевания?
+							<a class="view" href="#faq3">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq3" class="faq_as">
+								<p>Базовый пакет документов: паспорт, СНИЛС, правоустанавливающие или правоудостоверяющие документы (свидетельство, выписка из ЕГРП, выписка из ЕГРН и т.д.), картографичекий материал о местоположении участка.</p>
+								<p>Для регистрации объектов капитального строительства потребуется: заполненная декларация, подготовленный кадастровым инженером технический план, при необходимости технический паспорт или разрешение на строительство.</p>
+								<p>Данный перечень документов достаточно общий, но в большинстве случаев подходит для большинства видов кадастровых работ.</p>
+							</div>
 						</div>
 					</li>
 					<li>
 						<div class="visible">
-							Есть ли у вас геометрия?
-							<div class="view">смотреть ответ</div>
+							Закон о межевании?
+							<a class="view" href="#faq4">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq4" class="faq_as">
+								<p>Приведенные ниже законодательные акты являются основой для формирования  кадастровым инженером межевого плана необходимого для проведения государственного кадастрового учета.</p>
+								<p>Федеральный закон "О государственном кадастре недвижимости" от 24.07.2007 N 221-ФЗ</p>
+								<p>Федеральный закон "О государственной регистрации недвижимости" от 13.07.2015 N 218-ФЗ</p>
+								<p>Приказ Минэкономразвития России от 08.12.2015 N 921 (ред. от 23.11.2016) "Об утверждении формы и состава сведений межевого плана, требований к его подготовке"</p>
+								<p>Приказ Минэкономразвития России от 18.12.2015 N 953 (ред. от 01.11.2016) "Об утверждении формы технического плана и требований к его подготовке, состава содержащихся в нем сведений, а также формы декларации об объекте недвижимости, требований к ее подготовке, состава содержащихся в ней сведений"</p>
+							</div>
 						</div>
 					</li>
 					<li>
 						<div class="visible">
-							Готовите ли вы к ЕГЭ? Реально ли подготовиться к ЕГЭ за год?
-							<div class="view">смотреть ответ</div>
+							Есть ли у вас лицензии?
+							<a class="view" href="#faq5">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq5" class="faq_as">
+								<p>Да, все наши специалисты имеют аттестаты кадастровых инженеров и имеют обязательное личное  членство  в СРО. Также наша организация имеет добровольное членство в СРО и аккредитована в РГИС Санкт-Петербурга.</p>
+							</div>
 						</div>
 					</li>
 					<li>
 						<div class="visible">
-							Пишете ли вы на занятиях пробные тесты ЕГЭ?
-							<div class="view">смотреть ответ</div>
+							Как к вам добраться?
+							<a class="view" href="#faq6">смотреть ответ</a>
 						</div>
 						<div class="hidden">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestiae dolorem quis doloremque assumenda recusandae. Deserunt odit mollitia dolores velit error magni porro possimus, corporis nihil iusto rerum hic numquam.
+							<div id="faq6" class="faq_as">
+								<p>Мы находимся на ул. Рижской, д. 3, офис 306 БЦ «Наутилус», станция метро Новочеркасская, выход №12, прямо по Новочеркасскому проспекту, второй перекресток направо. </p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="visible">
+							Кто может заключить договор на выполнение кадастровых работ?
+							<a class="view" href="#faq7">смотреть ответ</a>
+						</div>
+						<div class="hidden">
+							<div id="faq7" class="faq_as">
+								<p>Любое заинтересованное в проведении того или иного вида кадастровых работ лицо.</p>
+							</div>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
 		<section class="map">
-			<div class="row">
+			<div class="wow bounceIn">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A002dc93bec6ca753ed6f4a2fdf385e69eaa4b9a258ff028411092b70b29bed72&amp;width=100%25&amp;height=560&amp;lang=ru_UA&amp;scroll=false"></script>
 				<div class="contact">
 					<div class="contact_logo">южный ветер</div>
 					<b>контакты</b>
@@ -329,11 +420,33 @@
 		</section>
 	</main>
 	<footer>
-		<div class="row">
-			<div class="logo">южный ветер</div>
+		<div class="row row_nav">
+			<img src="img/logo_m.png" class="logo" data-href="body" alt="">
+			<div class="social">
+				<a href="#"><img src="img/vk.png" alt=""></a>
+				<a href="#"><img src="img/inst.png" alt=""></a>
+			</div>
 			<p>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ИЛИ  НАЗНАЧИТЬ ВСТРЕЧУ СО СПЕЦИАЛИСТОМ</p>
-			<div class="btn">заказать</div>
+			<a class="btn" href="#sf" data-form="Заказать звонок(подвал)">заказать</a>
 		</div>
 	</footer>
+	<div class="hidden">
+		<form id="sf">
+			<h3>оставьте заявку</h3>
+			<div class="input">
+				<input type="text" placeholder="Ваше имя" required="required">
+			</div>
+			<div class="input">
+				<input type="text" placeholder="Ваш телефон" required="required">
+			</div>
+			<button class="btn">отправить</button>
+			<div class="step1">
+				
+			</div>
+			<div class="step2">
+				<h3>Спасибо за вашу заявку <br> Нащ консультант свяжется с вами в ближайшее время</h3>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
