@@ -5,33 +5,39 @@ $(document).ready(function(){
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 5,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
 	  slidesToScroll: 1,
 	  responsive: [
 	    {
-	      breakpoint: 900,
+	      breakpoint: 950,
 	      settings: {
 	        slidesToShow: 3,
 	        slidesToScroll: 1
 	      }
 	    },
 	    {
-	      breakpoint: 600,
+	      breakpoint: 700,
 	      settings: {
 	        slidesToShow: 2,
 	        slidesToScroll: 1
 	      }
 	    },
 	    {
-	      breakpoint: 480,
+	      breakpoint: 470,
 	      settings: {
-	        slidesToShow: 2,
+	        slidesToShow: 1,
 	        slidesToScroll: 1
 	      }
 	    }
 	  ]
 	});
 	
- 	new WOW().init();
+ 	
+	
+	if($(window).width()>800){
+	   new WOW().init();
+	}
 	$("nav li, .logo").click(function(){
 		var target = $(this).attr('data-href');
         $('html, body').animate({scrollTop: $(target).offset().top-30}, 1300);
@@ -74,6 +80,9 @@ $(document).ready(function(){
 	  midClick: true
 	});
 
+	$('.burger, nav li').click(function(){
+		$('nav ul').slideToggle('slow');
+	});
 
 });
 
